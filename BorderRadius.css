@@ -1,0 +1,86 @@
+body {
+  background-color: gray;
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+h1 {
+  color: white;
+  margin-right: 30px;
+  left: 50%;
+  
+}
+
+p {
+	padding: 10px;
+	z-index: 2;
+}
+
+
+.rcorners {
+  border-top-left-radius: var(--borders1);
+  border-top-right-radius: var(--borders2);
+  border-bottom-left-radius: var(--borders3);
+  border-bottom-right-radius: var(--borders4);
+  --borders1a: 5px solid #FFFFFF;
+  --borders2b: 5px solid #FFFFFF;
+  --borders3c: 5px solid #FFFFFF;
+  --borders4d: 5px solid #FFFFFF;
+  border-top: var(--borders1a);
+  border-bottom: var(--borders2b);
+  border-left: var(--borders3c);
+  border-right: var(--borders4d);
+  //border: 5px solid #FFFFFF;
+  margin-bottom: 20px;
+  padding: 50px;
+  width: 100px;
+  height: 100px;
+  z-index: 5;
+  align-items: center;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  horizontal-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
